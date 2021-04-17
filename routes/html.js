@@ -1,5 +1,4 @@
 var app = require("express").Router()
-
 var path = require("path")
 
 app.get("/", function(req,res){
@@ -11,4 +10,4 @@ app.get("/stats", function(req,res){
 app.get("/exercise", function(req,res){
     res.sendFile(path.join(__dirname,"../public/exercise.html"));
 })
-model.exports = app
+module.exports = app
